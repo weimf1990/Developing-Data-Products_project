@@ -8,7 +8,7 @@ ui <- shinyUI(fluidPage(
     # Sidebar
     sidebarLayout(
         sidebarPanel(
-            helpText("The carachteristics of the diamond you are looking for"),
+            helpText("The characteristics of the diamond you are looking for"),
             numericInput('carat', 'weight of the diamond (carat):', 0.7, min = 0.2, max = 5.0),
             checkboxGroupInput('cut', 'quality of the cut:', c("Fair", "Good", "Very Good", "Premium", "Ideal"), selected = c("Good","Very Good")),
             checkboxGroupInput('clarity', 'clarity of the diamond:', c("level1_Worst(I1)"="I1", "level2(SI2)"="SI2", "level3(SI1)"="SI1", "level4(VS2)"="VS2", "level5(VS1)"="VS1", "level6(VVS2)"="VVS2", "level7(VVS1)"="VVS1", "level8_Best(IF)"="IF"), selected = c("VS2","VS1","VVS2")),
